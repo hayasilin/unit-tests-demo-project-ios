@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,14 @@
 		650761B623E3E94A00905CC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 650761B423E3E94A00905CC6 /* LaunchScreen.storyboard */; };
 		650761C123E3E94A00905CC6 /* ArticleListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650761C023E3E94A00905CC6 /* ArticleListTests.swift */; };
 		650761CC23E3E94A00905CC6 /* ArticleListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650761CB23E3E94A00905CC6 /* ArticleListUITests.swift */; };
+		6531C0CD23E47AAD00A028CA /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6531C0CC23E47AAD00A028CA /* ArticleListViewController.swift */; };
+		6531C0CF23E47ACE00A028CA /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6531C0CE23E47ACE00A028CA /* ArticleListViewModel.swift */; };
+		6531C0D123E47AFD00A028CA /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6531C0D023E47AFD00A028CA /* ApiClient.swift */; };
+		6531C0D323E47B8800A028CA /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6531C0D223E47B8800A028CA /* Article.swift */; };
+		6531C0D523E47C0800A028CA /* ArticleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6531C0D423E47C0800A028CA /* ArticleService.swift */; };
+		6531C0D923E486FC00A028CA /* ArticleListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6531C0D823E486FC00A028CA /* ArticleListCollectionViewCell.swift */; };
+		6531C0DB23E489CF00A028CA /* ArticleWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6531C0DA23E489CF00A028CA /* ArticleWebViewController.swift */; };
+		6531C0DD23E48A0700A028CA /* ArticleWebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6531C0DC23E48A0700A028CA /* ArticleWebViewModel.swift */; };
 		818DC153A3CEF7C8A769CE14 /* Pods_ArticleList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8E70CFB61155E22480577A /* Pods_ArticleList.framework */; };
 		86973FF17BFBA8DE51E78C7E /* Pods_ArticleListUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF27C97D75C557B2397418CF /* Pods_ArticleListUITests.framework */; };
 		8A2E193723F78AA3A0BF2678 /* Pods_ArticleListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E0739FD09A4224E70A5109 /* Pods_ArticleListTests.framework */; };
@@ -57,6 +65,14 @@
 		650761C723E3E94A00905CC6 /* ArticleListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArticleListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		650761CB23E3E94A00905CC6 /* ArticleListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListUITests.swift; sourceTree = "<group>"; };
 		650761CD23E3E94A00905CC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6531C0CC23E47AAD00A028CA /* ArticleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
+		6531C0CE23E47ACE00A028CA /* ArticleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewModel.swift; sourceTree = "<group>"; };
+		6531C0D023E47AFD00A028CA /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		6531C0D223E47B8800A028CA /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		6531C0D423E47C0800A028CA /* ArticleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleService.swift; sourceTree = "<group>"; };
+		6531C0D823E486FC00A028CA /* ArticleListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListCollectionViewCell.swift; sourceTree = "<group>"; };
+		6531C0DA23E489CF00A028CA /* ArticleWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleWebViewController.swift; sourceTree = "<group>"; };
+		6531C0DC23E48A0700A028CA /* ArticleWebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleWebViewModel.swift; sourceTree = "<group>"; };
 		65E0739FD09A4224E70A5109 /* Pods_ArticleListTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArticleListTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		774294581E980D414F433BBF /* Pods-ArticleListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArticleListTests.release.xcconfig"; path = "Target Support Files/Pods-ArticleListTests/Pods-ArticleListTests.release.xcconfig"; sourceTree = "<group>"; };
 		80DE68FB938821501A5E2B9B /* Pods-ArticleList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArticleList.release.xcconfig"; path = "Target Support Files/Pods-ArticleList/Pods-ArticleList.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,13 +132,16 @@
 		650761A723E3E94800905CC6 /* ArticleList */ = {
 			isa = PBXGroup;
 			children = (
+				650761B723E3E94A00905CC6 /* Info.plist */,
 				650761A823E3E94800905CC6 /* AppDelegate.swift */,
 				650761AA23E3E94800905CC6 /* ViewController.swift */,
-				650761AC23E3E94800905CC6 /* Main.storyboard */,
 				650761B223E3E94A00905CC6 /* Assets.xcassets */,
-				650761B423E3E94A00905CC6 /* LaunchScreen.storyboard */,
-				650761B723E3E94A00905CC6 /* Info.plist */,
 				650761AF23E3E94900905CC6 /* ArticleList.xcdatamodeld */,
+				650761B423E3E94A00905CC6 /* LaunchScreen.storyboard */,
+				650761AC23E3E94800905CC6 /* Main.storyboard */,
+				6531C0E023E48C3B00A028CA /* Model */,
+				6531C0DE23E48C1E00A028CA /* Pages */,
+				6531C0DF23E48C2900A028CA /* Services */,
 			);
 			path = ArticleList;
 			sourceTree = "<group>";
@@ -145,6 +164,35 @@
 			path = ArticleListUITests;
 			sourceTree = "<group>";
 		};
+		6531C0DE23E48C1E00A028CA /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				6531C0CC23E47AAD00A028CA /* ArticleListViewController.swift */,
+				6531C0CE23E47ACE00A028CA /* ArticleListViewModel.swift */,
+				6531C0D823E486FC00A028CA /* ArticleListCollectionViewCell.swift */,
+				6531C0DA23E489CF00A028CA /* ArticleWebViewController.swift */,
+				6531C0DC23E48A0700A028CA /* ArticleWebViewModel.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		6531C0DF23E48C2900A028CA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6531C0D023E47AFD00A028CA /* ApiClient.swift */,
+				6531C0D423E47C0800A028CA /* ArticleService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6531C0E023E48C3B00A028CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6531C0D223E47B8800A028CA /* Article.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A0020BA8611F2A4C537501CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,7 +213,6 @@
 				115D50937A45274D4BA350D5 /* Pods-ArticleListUITests.debug.xcconfig */,
 				525CCE7B98E10072394FC4B6 /* Pods-ArticleListUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -390,9 +437,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6531C0D323E47B8800A028CA /* Article.swift in Sources */,
 				650761AB23E3E94800905CC6 /* ViewController.swift in Sources */,
+				6531C0CD23E47AAD00A028CA /* ArticleListViewController.swift in Sources */,
 				650761B123E3E94900905CC6 /* ArticleList.xcdatamodeld in Sources */,
+				6531C0D523E47C0800A028CA /* ArticleService.swift in Sources */,
 				650761A923E3E94800905CC6 /* AppDelegate.swift in Sources */,
+				6531C0CF23E47ACE00A028CA /* ArticleListViewModel.swift in Sources */,
+				6531C0D923E486FC00A028CA /* ArticleListCollectionViewCell.swift in Sources */,
+				6531C0DB23E489CF00A028CA /* ArticleWebViewController.swift in Sources */,
+				6531C0DD23E48A0700A028CA /* ArticleWebViewModel.swift in Sources */,
+				6531C0D123E47AFD00A028CA /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
