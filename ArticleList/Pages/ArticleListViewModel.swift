@@ -52,6 +52,8 @@ class ArticleListViewModel {
         selectedArticleClosure?(article)
     }
 
+    // MARK: private
+
     private func configureData(_ data: List) {
         self.articleList = data.list
         articleListDidChange?()

@@ -41,6 +41,8 @@ class ArticleService {
         }
     }
 
+    // MARK: - Private
+
     private func createRequest() -> URLRequest {
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = "GET"
