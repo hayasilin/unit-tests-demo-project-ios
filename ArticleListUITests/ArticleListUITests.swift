@@ -29,6 +29,12 @@ class ArticleListUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+
+        let app = XCUIApplication()
+        XCTAssert(tapWithExpect(element: app.collectionViews.cells.firstMatch))
+        XCTAssert(app.webViews.firstMatch.waitForExistence(timeout: 30))
+        XCTAssert(tapWithExpect(element: app.navigationBars.buttons.firstMatch))
+        XCTAssert(app.collectionViews.firstMatch.waitForExistence(timeout: 30))
     }
 
 }

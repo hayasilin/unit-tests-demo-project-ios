@@ -16,6 +16,7 @@ target 'ArticleList' do
   target 'ArticleListUITests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'SDWebImage', '4.3.3'
   end
 
 end
