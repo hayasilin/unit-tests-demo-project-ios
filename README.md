@@ -8,6 +8,10 @@ The project is developed in Xcode 11.
 
 The code coverage is **77.5%**
 
+<img src="https://github.com/hayasilin/unit-tests-ios-demo-project/blob/master/resources/code_coverage_77.png">
+
 ## Higher code coverage
 
 If I remove the code that are not used by the app, such as iOS system callback or core data code in AppDelegate.swift, the code coverage can be higher, up to **92.6**
+
+<img src="https://github.com/hayasilin/unit-tests-ios-demo-project/blob/master/resources/code_coverage_92.png">
