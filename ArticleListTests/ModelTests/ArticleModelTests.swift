@@ -10,16 +10,28 @@ import XCTest
 @testable import ArticleList
 
 class ArticleModelTests: XCTestCase {
-    func testDecodeResponseIsSuccess() throws {
-        let data = (try APITester.getDataFromJSON(fileName: ArticleAPIResponseStatus.success.fileName))!
-        let articles = try JSONDecoder().decode(List.self, from: data)
+    func testDecodeResponseIsSuccess() {
+        guard let data = try? APITester.getDataFromJSON(fileName: ArticleAPIResponseStatus.success.fileName) else {
+            XCTFail()
+            return
+        }
+        guard let articles = try? JSONDecoder().decode(List.self, from: data) else {
+            XCTFail()
+            return
+        }
 
         XCTAssertEqual(14, articles.list.count)
     }
 
-    func testDecodeResponseIsEmptyData() throws {
-        let data = (try APITester.getDataFromJSON(fileName: ArticleAPIResponseStatus.empty.fileName))!
-        let articles = try JSONDecoder().decode(List.self, from: data)
+    func testDecodeResponseIsEmptyData() {
+        guard let data = try? APITester.getDataFromJSON(fileName: ArticleAPIResponseStatus.empty.fileName) else {
+            XCTFail()
+            return
+        }
+        guard let articles = try? JSONDecoder().decode(List.self, from: data) else {
+            XCTFail()
+            return
+        }
 
         XCTAssertEqual(0, articles.list.count)
     }
