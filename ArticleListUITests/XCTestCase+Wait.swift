@@ -9,7 +9,6 @@
 import XCTest
 
 extension XCTestCase {
-
     enum UIStatus: String {
         case exist = "exists == true"
         case notExist = "exists == false"

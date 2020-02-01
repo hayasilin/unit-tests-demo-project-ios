@@ -33,6 +33,7 @@ class ArticleListUITests: XCTestCase {
         let app = XCUIApplication()
         XCTAssert(tapWithExpect(element: app.collectionViews.cells.firstMatch))
         XCTAssert(app.webViews.firstMatch.waitForExistence(timeout: 30))
+        XCTAssert(app.staticTexts["Article"].waitForExistence(timeout: 30))
         XCTAssert(tapWithExpect(element: app.navigationBars.buttons.firstMatch))
         XCTAssert(app.collectionViews.firstMatch.waitForExistence(timeout: 30))
     }

@@ -54,8 +54,6 @@ class ArticleWebViewController: UIViewController {
     }
 
     func setupViews() {
-        title = viewModel.title
-
         setupProgressView()
         setupEstimatedProgressObserver()
 
@@ -99,5 +97,6 @@ extension ArticleWebViewController: WKNavigationDelegate {
 
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         progressView.isHidden = true
+        title = viewModel.title
     }
 }
