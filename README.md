@@ -1,4 +1,4 @@
-# Unit Tests iOS Demo Project
+# iOS Unit Tests Demo Project
 
 This is a following up repo for my [iOS Unit Tests Guide](https://github.com/hayasilin/unit-tests-ios-guide).
 
@@ -15,6 +15,6 @@ The code coverage is **77.5%**
 
 ## Higher code coverage
 
-If I remove the code that are not used by the app, such as iOS system callback or core data code in AppDelegate.swift, the code coverage can be higher, up to **92.6**
+If I remove the code that are not used by the app, such as iOS system callback or core data code in AppDelegate.swift and remove extension code in ApiClient.swift, the code coverage can be higher, up to **92.6**
 
 <img src="https://github.com/hayasilin/unit-tests-ios-demo-project/blob/master/resources/code_coverage_92.png">
