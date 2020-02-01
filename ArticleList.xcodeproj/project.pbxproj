@@ -29,6 +29,8 @@
 		6531C0ED23E51CC700A028CA /* ArticleModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6531C0EC23E51CC700A028CA /* ArticleModelTests.swift */; };
 		6531C0EF23E51D2F00A028CA /* APITester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6531C0EE23E51D2F00A028CA /* APITester.swift */; };
 		6531C0F323E51FF900A028CA /* ArticleServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6531C0F223E51FF900A028CA /* ArticleServiceTests.swift */; };
+		6531C0F523E522CF00A028CA /* LocationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6531C0F423E522CF00A028CA /* LocationManagerTests.swift */; };
+		6531C0F723E5233300A028CA /* ArticleListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6531C0F623E5233300A028CA /* ArticleListViewModelTests.swift */; };
 		818DC153A3CEF7C8A769CE14 /* Pods_ArticleList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8E70CFB61155E22480577A /* Pods_ArticleList.framework */; };
 		86973FF17BFBA8DE51E78C7E /* Pods_ArticleListUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF27C97D75C557B2397418CF /* Pods_ArticleListUITests.framework */; };
 		8A2E193723F78AA3A0BF2678 /* Pods_ArticleListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E0739FD09A4224E70A5109 /* Pods_ArticleListTests.framework */; };
@@ -85,6 +87,8 @@
 		6531C0EC23E51CC700A028CA /* ArticleModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModelTests.swift; sourceTree = "<group>"; };
 		6531C0EE23E51D2F00A028CA /* APITester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITester.swift; sourceTree = "<group>"; };
 		6531C0F223E51FF900A028CA /* ArticleServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleServiceTests.swift; sourceTree = "<group>"; };
+		6531C0F423E522CF00A028CA /* LocationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerTests.swift; sourceTree = "<group>"; };
+		6531C0F623E5233300A028CA /* ArticleListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewModelTests.swift; sourceTree = "<group>"; };
 		65E0739FD09A4224E70A5109 /* Pods_ArticleListTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArticleListTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		774294581E980D414F433BBF /* Pods-ArticleListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArticleListTests.release.xcconfig"; path = "Target Support Files/Pods-ArticleListTests/Pods-ArticleListTests.release.xcconfig"; sourceTree = "<group>"; };
 		80DE68FB938821501A5E2B9B /* Pods-ArticleList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArticleList.release.xcconfig"; path = "Target Support Files/Pods-ArticleList/Pods-ArticleList.release.xcconfig"; sourceTree = "<group>"; };
@@ -164,7 +168,9 @@
 				650761C223E3E94A00905CC6 /* Info.plist */,
 				6531C0E423E518CC00A028CA /* ApiClientTests.swift */,
 				650761C023E3E94A00905CC6 /* ArticleListTests.swift */,
+				6531C0F623E5233300A028CA /* ArticleListViewModelTests.swift */,
 				6531C0F223E51FF900A028CA /* ArticleServiceTests.swift */,
+				6531C0F423E522CF00A028CA /* LocationManagerTests.swift */,
 				6531C0F023E51F8D00A028CA /* ModelTests */,
 				6531C0F123E51FCF00A028CA /* Utility */,
 			);
@@ -499,8 +505,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6531C0F523E522CF00A028CA /* LocationManagerTests.swift in Sources */,
 				650761C123E3E94A00905CC6 /* ArticleListTests.swift in Sources */,
 				6531C0E523E518CC00A028CA /* ApiClientTests.swift in Sources */,
+				6531C0F723E5233300A028CA /* ArticleListViewModelTests.swift in Sources */,
 				6531C0ED23E51CC700A028CA /* ArticleModelTests.swift in Sources */,
 				6531C0F323E51FF900A028CA /* ArticleServiceTests.swift in Sources */,
 				6531C0EF23E51D2F00A028CA /* APITester.swift in Sources */,

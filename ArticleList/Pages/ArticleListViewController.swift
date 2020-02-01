@@ -89,8 +89,8 @@ extension ArticleListViewController: UICollectionViewDataSource {
 
         let article = viewModel.getArticle(at: indexPath)
 
-        cell.firstLabel.text = article.title
-        let imageUrlString = article.img_list?.first
+        cell.firstLabel.text = article?.title
+        let imageUrlString = article?.img_list?.first
         let imageUrl = URL(string: imageUrlString!)
         cell.imageView.sd_setImage(with: imageUrl, completed: nil)
 

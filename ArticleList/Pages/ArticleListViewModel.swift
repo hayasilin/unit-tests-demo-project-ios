@@ -43,12 +43,13 @@ class ArticleListViewModel {
         return articleList.count
     }
 
-    func getArticle(at indexPath: IndexPath) -> Article {
+    func getArticle(at indexPath: IndexPath) -> Article? {
+        guard articleList.count > indexPath.row else { return nil }
         return articleList[indexPath.row]
     }
 
     func selectArticle(at indexPath: IndexPath) {
-        let article = getArticle(at: indexPath)
+        guard let article = getArticle(at: indexPath) else { return }
         selectedArticleClosure?(article)
     }
 
