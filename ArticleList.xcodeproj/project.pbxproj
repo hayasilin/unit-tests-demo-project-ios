@@ -161,14 +161,13 @@
 				650761A823E3E94800905CC6 /* AppDelegate.swift */,
 				650761B223E3E94A00905CC6 /* Assets.xcassets */,
 				650761AF23E3E94900905CC6 /* ArticleList.xcdatamodeld */,
+				65FEDCEF2494CE6700706C76 /* Configuration */,
 				650761B423E3E94A00905CC6 /* LaunchScreen.storyboard */,
 				650761AC23E3E94800905CC6 /* Main.storyboard */,
+				6531C0E323E5185600A028CA /* Mangers */,
 				6531C0E023E48C3B00A028CA /* Model */,
 				6531C0DE23E48C1E00A028CA /* Pages */,
 				6531C0DF23E48C2900A028CA /* Services */,
-				6531C0E323E5185600A028CA /* Mangers */,
-				65F9D0A9248BC525009A2BAA /* Beta.xcconfig */,
-				65FEDCED2494CB7800706C76 /* Debug.xcconfig */,
 			);
 			path = ArticleList;
 			sourceTree = "<group>";
@@ -252,6 +251,15 @@
 				6531C0EE23E51D2F00A028CA /* APITester.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		65FEDCEF2494CE6700706C76 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				65F9D0A9248BC525009A2BAA /* Beta.xcconfig */,
+				65FEDCED2494CB7800706C76 /* Debug.xcconfig */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 		A0020BA8611F2A4C537501CF /* Frameworks */ = {
