@@ -53,4 +53,8 @@ class ArticleListCollectionViewCell: UICollectionViewCell {
             firstLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
         ])
     }
+
+    func display(image: UIImage?) {
+        imageView.image = image
+    }
 }

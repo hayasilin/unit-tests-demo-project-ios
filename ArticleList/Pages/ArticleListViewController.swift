@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SDWebImage
 
 class ArticleListViewController: UIViewController {
     var collectionView: UICollectionView = {
@@ -18,6 +17,8 @@ class ArticleListViewController: UIViewController {
     }()
 
     var viewModel: ArticleListViewModel
+
+    private var urls: [URL] = []
 
     init(viewModel: ArticleListViewModel = ArticleListViewModel()) {
         self.viewModel = viewModel
@@ -39,6 +40,20 @@ class ArticleListViewController: UIViewController {
         viewModelBinding()
 
         viewModel.requestArticlesAPI()
+
+        getImageUrls()
+    }
+
+    func getImageUrls() {
+        guard let plist = Bundle.main.url(forResource: "Photos", withExtension: "plist"),
+              let contents = try? Data(contentsOf: plist),
+              let serial = try? PropertyListSerialization.propertyList(from: contents, format: nil),
+              let serialUrls = serial as? [String] else {
+          print("Something went horribly wrong!")
+          return
+        }
+
+        urls = serialUrls.compactMap { URL(string: $0) }
     }
 
     func setupCollectionView() {
@@ -75,6 +90,39 @@ class ArticleListViewController: UIViewController {
             }
         }
     }
+
+    private func downloadWithGlobalQueue(at indexPath: IndexPath) {
+        DispatchQueue.global(qos: .utility).async { [weak self] in
+            guard let self = self else {
+                return
+            }
+
+            let url = self.urls[indexPath.item]
+            guard let data = try? Data(contentsOf: url), let image = UIImage(data: data) else {
+                return
+            }
+
+            DispatchQueue.main.async {
+                if let cell = self.collectionView.cellForItem(at: indexPath) as? ArticleListCollectionViewCell {
+                    cell.display(image: image)
+                }
+            }
+        }
+    }
+
+    private func downloadWithURLSession(at indexPath: IndexPath) {
+        URLSession.shared.dataTask(with: urls[indexPath.row]) { [weak self] (data, response, error) in
+            guard let self = self, let data = data, let image = UIImage(data: data) else {
+                return
+            }
+
+            DispatchQueue.main.async {
+                if let cell = self.collectionView.cellForItem(at: indexPath) as? ArticleListCollectionViewCell {
+                    cell.display(image: image)
+                }
+            }
+        }.resume()
+    }
 }
 
 extension ArticleListViewController: UICollectionViewDataSource {
@@ -88,12 +136,14 @@ extension ArticleListViewController: UICollectionViewDataSource {
             return UICollectionViewCell()
         }
 
+        cell.display(image: nil)
+
         let article = viewModel.getArticle(at: indexPath)
 
         cell.firstLabel.text = article?.title
-        let imageUrlString = article?.img_list?.first
-        let imageUrl = URL(string: imageUrlString!)
-        cell.imageView.sd_setImage(with: imageUrl, completed: nil)
+
+//        downloadWithGlobalQueue(at: indexPath)
+        downloadWithURLSession(at: indexPath) // A way that Apple already handle for you.
 
         return cell
     }

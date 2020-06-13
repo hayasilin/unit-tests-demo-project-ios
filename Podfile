@@ -6,7 +6,7 @@ target 'ArticleList' do
   use_frameworks!
 
   # Pods for ArticleList
-  pod 'SDWebImage', '4.3.3'
+  # pod 'SDWebImage', '4.3.3'
 
   target 'ArticleListTests' do
     inherit! :search_paths
@@ -16,7 +16,7 @@ target 'ArticleList' do
   target 'ArticleListUITests' do
     inherit! :search_paths
     # Pods for testing
-    pod 'SDWebImage', '4.3.3'
+    # pod 'SDWebImage', '4.3.3'
   end
 
 end
