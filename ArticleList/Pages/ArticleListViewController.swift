@@ -18,7 +18,13 @@ class ArticleListViewController: UIViewController {
 
     var viewModel: ArticleListViewModel
 
+    // Chapter 3
     private var urls: [URL] = []
+    // Chapter 4
+    private var images: [UIImage] = []
+    private let group = DispatchGroup()
+    private let queue = DispatchQueue.global(qos: .userInitiated)
+
 
     init(viewModel: ArticleListViewModel = ArticleListViewModel()) {
         self.viewModel = viewModel
@@ -42,6 +48,11 @@ class ArticleListViewController: UIViewController {
         viewModel.requestArticlesAPI()
 
         getImageUrls()
+
+        downloadImageWithDispatchQueue()
+        group.notify(queue: queue) {
+            print(self.images[0])
+        }
     }
 
     func getImageUrls() {
@@ -91,6 +102,7 @@ class ArticleListViewController: UIViewController {
         }
     }
 
+    // Chapter 3
     private func downloadWithGlobalQueue(at indexPath: IndexPath) {
         DispatchQueue.global(qos: .utility).async { [weak self] in
             guard let self = self else {
@@ -122,6 +134,26 @@ class ArticleListViewController: UIViewController {
                 }
             }
         }.resume()
+    }
+
+    // Chapter 4
+    private func downloadImageWithDispatchQueue() {
+        for url in urls {
+            group.enter()
+
+            let task = URLSession.shared.dataTask(with: url) {[weak self] (data, response, error) in
+                guard let self = self else {
+                    return
+                }
+                defer { self.group.leave() }
+
+                if error == nil, let data = data, let image = UIImage(data: data) {
+                    self.images.append(image)
+                }
+            }
+
+            task.resume()
+        }
     }
 }
 
