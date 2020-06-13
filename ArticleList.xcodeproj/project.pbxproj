@@ -58,6 +58,8 @@
 /* Begin PBXFileReference section */
 		004BCE118C15AD49C82631AC /* Pods-ArticleListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArticleListTests.debug.xcconfig"; path = "Target Support Files/Pods-ArticleListTests/Pods-ArticleListTests.debug.xcconfig"; sourceTree = "<group>"; };
 		115D50937A45274D4BA350D5 /* Pods-ArticleListUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArticleListUITests.debug.xcconfig"; path = "Target Support Files/Pods-ArticleListUITests/Pods-ArticleListUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		341FBDA1B84DDEFD5BA45B19 /* Pods-ArticleList.debug beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArticleList.debug beta.xcconfig"; path = "Target Support Files/Pods-ArticleList/Pods-ArticleList.debug beta.xcconfig"; sourceTree = "<group>"; };
+		386221C338953BB6CBAEA67D /* Pods-ArticleListTests.debug beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArticleListTests.debug beta.xcconfig"; path = "Target Support Files/Pods-ArticleListTests/Pods-ArticleListTests.debug beta.xcconfig"; sourceTree = "<group>"; };
 		3B62A6D9DC86AE0900553DB4 /* Pods-ArticleList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArticleList.debug.xcconfig"; path = "Target Support Files/Pods-ArticleList/Pods-ArticleList.debug.xcconfig"; sourceTree = "<group>"; };
 		3D8E70CFB61155E22480577A /* Pods_ArticleList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArticleList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		525CCE7B98E10072394FC4B6 /* Pods-ArticleListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArticleListUITests.release.xcconfig"; path = "Target Support Files/Pods-ArticleListUITests/Pods-ArticleListUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,8 +96,11 @@
 		6531C0F823E5289E00A028CA /* ArticleWebViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleWebViewModelTests.swift; sourceTree = "<group>"; };
 		6531C0FA23E529DD00A028CA /* XCTestCase+Wait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Wait.swift"; sourceTree = "<group>"; };
 		65E0739FD09A4224E70A5109 /* Pods_ArticleListTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArticleListTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F9D0A9248BC525009A2BAA /* Beta.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Beta.xcconfig; sourceTree = "<group>"; };
+		65FEDCED2494CB7800706C76 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		774294581E980D414F433BBF /* Pods-ArticleListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArticleListTests.release.xcconfig"; path = "Target Support Files/Pods-ArticleListTests/Pods-ArticleListTests.release.xcconfig"; sourceTree = "<group>"; };
 		80DE68FB938821501A5E2B9B /* Pods-ArticleList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArticleList.release.xcconfig"; path = "Target Support Files/Pods-ArticleList/Pods-ArticleList.release.xcconfig"; sourceTree = "<group>"; };
+		860546B9A62CFF09CE8CFC5B /* Pods-ArticleListUITests.debug beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArticleListUITests.debug beta.xcconfig"; path = "Target Support Files/Pods-ArticleListUITests/Pods-ArticleListUITests.debug beta.xcconfig"; sourceTree = "<group>"; };
 		CF27C97D75C557B2397418CF /* Pods_ArticleListUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArticleListUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -162,6 +167,8 @@
 				6531C0DE23E48C1E00A028CA /* Pages */,
 				6531C0DF23E48C2900A028CA /* Services */,
 				6531C0E323E5185600A028CA /* Mangers */,
+				65F9D0A9248BC525009A2BAA /* Beta.xcconfig */,
+				65FEDCED2494CB7800706C76 /* Debug.xcconfig */,
 			);
 			path = ArticleList;
 			sourceTree = "<group>";
@@ -266,6 +273,9 @@
 				774294581E980D414F433BBF /* Pods-ArticleListTests.release.xcconfig */,
 				115D50937A45274D4BA350D5 /* Pods-ArticleListUITests.debug.xcconfig */,
 				525CCE7B98E10072394FC4B6 /* Pods-ArticleListUITests.release.xcconfig */,
+				341FBDA1B84DDEFD5BA45B19 /* Pods-ArticleList.debug beta.xcconfig */,
+				386221C338953BB6CBAEA67D /* Pods-ArticleListTests.debug beta.xcconfig */,
+				860546B9A62CFF09CE8CFC5B /* Pods-ArticleListUITests.debug beta.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -586,6 +596,7 @@
 /* Begin XCBuildConfiguration section */
 		650761CE23E3E94A00905CC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65FEDCED2494CB7800706C76 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -828,6 +839,132 @@
 			};
 			name = Release;
 		};
+		65F9D0A5248BC4EF009A2BAA /* Debug Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65F9D0A9248BC525009A2BAA /* Beta.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug Beta";
+		};
+		65F9D0A6248BC4EF009A2BAA /* Debug Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 341FBDA1B84DDEFD5BA45B19 /* Pods-ArticleList.debug beta.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ArticleList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.ArticleList.beta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug Beta";
+		};
+		65F9D0A7248BC4EF009A2BAA /* Debug Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 386221C338953BB6CBAEA67D /* Pods-ArticleListTests.debug beta.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ArticleListTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.ArticleListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArticleList.app/ArticleList";
+			};
+			name = "Debug Beta";
+		};
+		65F9D0A8248BC4EF009A2BAA /* Debug Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 860546B9A62CFF09CE8CFC5B /* Pods-ArticleListUITests.debug beta.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ArticleListUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.ArticleListUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ArticleList;
+			};
+			name = "Debug Beta";
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -835,6 +972,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				650761CE23E3E94A00905CC6 /* Debug */,
+				65F9D0A5248BC4EF009A2BAA /* Debug Beta */,
 				650761CF23E3E94A00905CC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -844,6 +982,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				650761D123E3E94A00905CC6 /* Debug */,
+				65F9D0A6248BC4EF009A2BAA /* Debug Beta */,
 				650761D223E3E94A00905CC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -853,6 +992,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				650761D423E3E94A00905CC6 /* Debug */,
+				65F9D0A7248BC4EF009A2BAA /* Debug Beta */,
 				650761D523E3E94A00905CC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -862,6 +1002,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				650761D723E3E94A00905CC6 /* Debug */,
+				65F9D0A8248BC4EF009A2BAA /* Debug Beta */,
 				650761D823E3E94A00905CC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
