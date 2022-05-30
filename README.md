@@ -7,6 +7,10 @@ It contains a real life demo project to simulate and show how to write unit test
 - The project is developed in Xcode 11.
 - This project is using MVVM pattern.(It didn't use coordinator)
 
+## Architecture
+
+- MVVM architecture
+
 ## Code coverage result
 
 The code coverage is up to **77%**
